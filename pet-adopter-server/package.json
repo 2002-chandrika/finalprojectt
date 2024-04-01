@@ -1,0 +1,21 @@
+{
+  "name": "pet-adopter-server",
+  "version": "1.0.0",
+  "description": "This is a pet adoption web application.",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "nodemailer": "^6.9.11",
+    "nodemon": "^3.1.0",
+    "stripe": "^14.19.0"
+  }
+}
