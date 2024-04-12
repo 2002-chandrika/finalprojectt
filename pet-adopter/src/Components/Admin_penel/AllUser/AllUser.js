@@ -13,7 +13,7 @@ const AllUser = ({ session }) => {
 
   useEffect(() => {
     const userRole = { userRole: role };
-    axios.post('http://localhost:8080/api/v1/getUserDataCount', userRole)
+    axios.post('https://finalprojectt-delta.vercel.app//api/v1/getUserDataCount', userRole)
       .then(res => setUserData(res.data))
       .catch(error => console.log(error));
   }, [role]);

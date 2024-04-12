@@ -54,7 +54,7 @@ const PostPetCommunity = ({ user }) => {
                         timer: 1500
                     });
                 } else {
-                    axios.post('http://localhost:8080/api/v1/petCommunity', postData)
+                    axios.post('https://finalprojectt-delta.vercel.app//api/v1/petCommunity', postData)
                         .then(res => {
                             if (res.statusText === 'OK') {
                                 Swal.fire({

@@ -4,7 +4,7 @@ import Link from "next/link";
 const PetSection = async () => {
 
     // All pets data fetch from database
-    const res = await fetch("http://localhost:8080/api/v1/petlistings", {
+    const res = await fetch("https://finalprojectt-delta.vercel.app//api/v1/petlistings", {
         cache: "no-store"
     });
     const pets = await res.json();

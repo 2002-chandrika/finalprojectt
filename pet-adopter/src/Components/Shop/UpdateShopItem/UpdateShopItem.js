@@ -28,7 +28,7 @@ const UpdateShopItem = ({ item }) => {
         } else {
             itemInfo.image = item?.image
         }
-        const res = await fetch(`http://localhost:8080/api/v1/item/${item?._id}`, {
+        const res = await fetch(`https://finalprojectt-delta.vercel.app//api/v1/item/${item?._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

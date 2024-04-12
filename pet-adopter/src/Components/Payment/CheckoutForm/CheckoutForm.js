@@ -62,8 +62,8 @@ const CheckoutForm = ({ item, session, clientSecretData }) => {
                     transID : paymentIntent?.id,
                     image : item.image,
                 }
-                // 'http://localhost:8080/api/v1/orders'  http://localhost:8080
-                axios.post('http://localhost:8080/api/v1/orders', OrderData).then((res) => {
+                // 'https://finalprojectt-delta.vercel.app//api/v1/orders'  https://finalprojectt-delta.vercel.app/
+                axios.post('https://finalprojectt-delta.vercel.app//api/v1/orders', OrderData).then((res) => {
                     //.data.success
                     console.log(res.data)
                     if (res) {

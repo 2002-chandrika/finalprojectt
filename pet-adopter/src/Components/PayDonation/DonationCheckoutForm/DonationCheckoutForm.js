@@ -65,8 +65,8 @@ const DonationCheckoutForm = ({ pay, clientSecretData, session }) => {
                 }
                 // console.log(DonateData)
                 // return
-                // 'http://localhost:8080'  http://localhost:8080
-                axios.post('http://localhost:8080/api/v1/donations', DonateData).then((res) => {
+                // 'https://finalprojectt-delta.vercel.app/'  https://finalprojectt-delta.vercel.app/
+                axios.post('https://finalprojectt-delta.vercel.app//api/v1/donations', DonateData).then((res) => {
                     //.data.success
                     console.log(res.data)
                     if (res) {

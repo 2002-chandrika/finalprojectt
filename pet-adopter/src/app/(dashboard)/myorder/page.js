@@ -10,8 +10,8 @@ const page = async () => {
     if (!session?.user) {
         redirect('/')
     }
-    // const res = await fetch('http://localhost:8080/api/v1/orders/api/v1/orders', {http://localhost:8080
-    const res = await fetch(`http://localhost:8080/api/v1/orders/user?email=${session?.user?.email}`, {
+    // const res = await fetch('https://finalprojectt-delta.vercel.app//api/v1/orders/api/v1/orders', {https://finalprojectt-delta.vercel.app/
+    const res = await fetch(`https://finalprojectt-delta.vercel.app//api/v1/orders/user?email=${session?.user?.email}`, {
         cache: 'no-store'
     })
     const storeItems = await res.json()

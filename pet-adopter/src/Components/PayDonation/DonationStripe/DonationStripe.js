@@ -8,8 +8,8 @@ const stripePromise = loadStripe('pk_test_51OFa8mLyPuxrVtxVxj4uYM8JVPorLKehNtolk
 const DonationStripe = ({pay,session}) => {
     const [clientSecretData,seclientSecretData]=useState(null)
     useEffect(() => {
-        // axios.post('http://localhost:8080/createPaymentIntent', http://localhost:8080/createPaymentIntent
-        axios.post('http://localhost:8080/createPaymentIntent', { price: pay})
+        // axios.post('https://finalprojectt-delta.vercel.app//createPaymentIntent', https://finalprojectt-delta.vercel.app//createPaymentIntent
+        axios.post('https://finalprojectt-delta.vercel.app//createPaymentIntent', { price: pay})
             .then((res) => {
                 seclientSecretData(res.data.clientSecret)
             })

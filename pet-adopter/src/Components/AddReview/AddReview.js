@@ -21,7 +21,7 @@ export const AddReview = ({ user }) => {
             rating,
         }
 
-        axios.post('http://localhost:8080/api/v1/Feedbacks', reviewInfo)
+        axios.post('https://finalprojectt-delta.vercel.app//api/v1/Feedbacks', reviewInfo)
             .then(res => {
                 Swal.fire(`${name} Your Review Done!`);
             })

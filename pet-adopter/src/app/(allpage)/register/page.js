@@ -45,7 +45,7 @@ const page = () => {
 
         // When user hit the login button you can get user information in rawFormData object
         await regData
-        const res = await fetch(`http://localhost:8080/api/v1/userregistration`, {
+        const res = await fetch(`https://finalprojectt-delta.vercel.app//api/v1/userregistration`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

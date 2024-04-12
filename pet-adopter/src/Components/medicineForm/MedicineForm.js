@@ -22,8 +22,8 @@ const MedicineForm = () => {
         */
    
         return
-        ///   http://localhost:8080 http://localhost:8080
-        const res = await fetch('http://localhost:8080/api/v1/medicine', {
+        ///   https://finalprojectt-delta.vercel.app/ https://finalprojectt-delta.vercel.app/
+        const res = await fetch('https://finalprojectt-delta.vercel.app//api/v1/medicine', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

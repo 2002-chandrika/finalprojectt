@@ -2,7 +2,7 @@
 
 export const getSingleItem = async (id) => {
     const res = await fetch(
-        `http://localhost:8080/api/v1/item/${id}`,
+        `https://finalprojectt-delta.vercel.app//api/v1/item/${id}`,
         {
             cache: "no-store",
         }

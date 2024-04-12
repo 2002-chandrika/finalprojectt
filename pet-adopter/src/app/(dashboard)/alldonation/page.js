@@ -6,7 +6,7 @@ const page = async() => {
     // if (!session?.user || session?.user?.role !=='admin') {
     //     redirect('/')
     // }  className='w-[230px] min-w-[230px]'
-    const res = await fetch('http://localhost:8080/api/v1/donations', {
+    const res = await fetch('https://finalprojectt-delta.vercel.app//api/v1/donations', {
         cache:'no-store'
     })
     const allDonations = await res.json()

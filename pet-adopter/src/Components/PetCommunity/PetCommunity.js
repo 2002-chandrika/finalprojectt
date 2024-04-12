@@ -12,14 +12,14 @@ const PetCommunity = ({user}) => {
     
 
     useEffect(() => {
-        axios.get('http://localhost:8080/api/v1/petCommunity')
+        axios.get('https://finalprojectt-delta.vercel.app//api/v1/petCommunity')
               .then(res => {
                        setPostData(res.data.reverse())
             })
             .catch(error => console.log (error, 'error'))
 
 
-        axios.get('http://localhost:8080/api/v1/petLikeGet')
+        axios.get('https://finalprojectt-delta.vercel.app//api/v1/petLikeGet')
               .then(res => {
                        setUserLike(res.data.reverse())
             })
@@ -28,7 +28,7 @@ const PetCommunity = ({user}) => {
     const handleLike=(id)=>{
       const like='like'
     const likeComment={id,like}
-    axios.post('http://localhost:8080/api/v1/petLike',likeComment)
+    axios.post('https://finalprojectt-delta.vercel.app//api/v1/petLike',likeComment)
     .then(res=>{
       console.log(res)
       setLike(false)
