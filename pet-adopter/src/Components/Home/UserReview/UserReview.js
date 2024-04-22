@@ -19,7 +19,7 @@ const UserReview = () => {
     console.log(review);
 
     useEffect(() => {
-        axios.get('https://finalprojectt-delta.vercel.app//api/v1/Feedbacks')
+        axios.get('https://finalprojectt-205i.onrender.com/api/v1/Feedbacks')
             .then(res => setReview(res.data))
     }, [])
 

@@ -10,8 +10,8 @@ const page = async () => {
     if (!session?.user || session?.user?.role !== 'admin') {
         redirect('/')
     }
-    // const res = await fetch('https://finalprojectt-delta.vercel.app//api/v1/orders/api/v1/orders', {https://finalprojectt-delta.vercel.app/ || 
-    const res = await fetch('https://finalprojectt-delta.vercel.app//api/v1/orders', {
+    // const res = await fetch('https://finalprojectt-205i.onrender.com/api/v1/orders/api/v1/orders', {https://finalprojectt-205i.onrender.com || 
+    const res = await fetch('https://finalprojectt-205i.onrender.com/api/v1/orders', {
         cache: 'no-store'
     })
     const storeItems = await res.json()

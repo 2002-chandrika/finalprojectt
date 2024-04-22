@@ -12,7 +12,7 @@ const page = async () => {
     if (!session?.user || session?.user?.role !=='admin') {
         redirect('/')
     }
-    const res = await fetch('https://finalprojectt-delta.vercel.app//api/v1/shopitems', {
+    const res = await fetch('https://finalprojectt-205i.onrender.com/api/v1/shopitems', {
         cache:'no-store'
     })
     const storeItems = await res.json()

@@ -10,8 +10,8 @@ const stripePromise = loadStripe('pk_test_51OFa8mLyPuxrVtxVxj4uYM8JVPorLKehNtolk
 const StripePayment = ({ item, session }) => {
     const [clientSecretData,seclientSecretData]=useState(null)
     useEffect(() => {
-        // axios.post('https://finalprojectt-delta.vercel.app//createPaymentIntent', https://finalprojectt-delta.vercel.app//createPaymentIntent
-        axios.post('https://finalprojectt-delta.vercel.app//createPaymentIntent', { price: item?.price })
+        // axios.post('https://finalprojectt-205i.onrender.com/createPaymentIntent', https://finalprojectt-205i.onrender.com/createPaymentIntent
+        axios.post('https://finalprojectt-205i.onrender.com/createPaymentIntent', { price: item?.price })
             .then((res) => {
                 seclientSecretData(res.data.clientSecret)
             })

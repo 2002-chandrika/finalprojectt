@@ -65,8 +65,8 @@ const DonationCheckoutForm = ({ pay, clientSecretData, session }) => {
                 }
                 // console.log(DonateData)
                 // return
-                // 'https://finalprojectt-delta.vercel.app/'  https://finalprojectt-delta.vercel.app/
-                axios.post('https://finalprojectt-delta.vercel.app//api/v1/donations', DonateData).then((res) => {
+                // 'https://finalprojectt-205i.onrender.com'  https://finalprojectt-205i.onrender.com
+                axios.post('https://finalprojectt-205i.onrender.com/api/v1/donations', DonateData).then((res) => {
                     //.data.success
                     console.log(res.data)
                     if (res) {

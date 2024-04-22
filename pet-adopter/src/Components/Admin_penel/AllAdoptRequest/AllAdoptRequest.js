@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 const AllAdoptRequest = () => {
   const [adoptData,setAdoptData]=useState([])
   useEffect(()=>{
-    axios.get('https://finalprojectt-delta.vercel.app//api/v1/adoptDataGet')
+    axios.get('https://finalprojectt-205i.onrender.com/api/v1/adoptDataGet')
     .then(res=>setAdoptData(res.data.reverse()))
     .catch(error=>console.log(error))
   },[])

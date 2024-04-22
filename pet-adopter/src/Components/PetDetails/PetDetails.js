@@ -13,7 +13,7 @@ const PetDetails = ({ pet, user }) => {
 
     const handleAdoptClick = () => {
 
-        axios.post('https://finalprojectt-delta.vercel.app//api/v1/adoptrequest', { pet, user })
+        axios.post('https://finalprojectt-205i.onrender.com/api/v1/adoptrequest', { pet, user })
             .then(res => {
                 console.log(res.data);
 

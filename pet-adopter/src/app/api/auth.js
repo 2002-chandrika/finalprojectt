@@ -16,7 +16,7 @@ export const authOptions = {
                       authorize: async(credentials)=> {
                         const username = credentials?.username
 
-                        const registerUser = await fetch(`https://finalprojectt-delta.vercel.app//api/v1/getregisteruser?email=${username}`)
+                        const registerUser = await fetch(`https://finalprojectt-205i.onrender.com/api/v1/getregisteruser?email=${username}`)
                         const registeredUsers = await registerUser.json()
                         const user = registeredUsers
                               

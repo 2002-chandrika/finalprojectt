@@ -10,7 +10,7 @@ const AdoptRequest = () => {
     const router = useRouter()
     const [adoptData, setAdoptData] = useState([])
     useEffect(() => {
-        axios.get('https://finalprojectt-delta.vercel.app//api/v1/adoptrequest')
+        axios.get('https://finalprojectt-205i.onrender.com/api/v1/adoptrequest')
             .then(res => setAdoptData(res.data))
     }, [])
     const approveRequest = (id) => {
@@ -25,8 +25,8 @@ const AdoptRequest = () => {
             confirmButtonText: "Yes"
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.put(`https://finalprojectt-delta.vercel.app//api/v1/adoptrequest?id=${id}`, { status: 'approved' })
-                    // axios.put(`https://finalprojectt-delta.vercel.app//api/v1/adoptrequest?id=${id}`)
+                axios.put(`https://finalprojectt-205i.onrender.com/api/v1/adoptrequest?id=${id}`, { status: 'approved' })
+                    // axios.put(`https://finalprojectt-205i.onrender.com/api/v1/adoptrequest?id=${id}`)
                     .then(res => {
                         if (res?.data?.acknowledged) {
                             router.refresh()
@@ -55,8 +55,8 @@ const AdoptRequest = () => {
             confirmButtonText: "Yes"
         }).then((result) => {
             if (result.isConfirmed) {
-                // axios.put(`https://finalprojectt-delta.vercel.app//api/v1/adoptrequest?id=${id}`, { status: 'rejected' })
-                axios.put(`https://finalprojectt-delta.vercel.app//api/v1/adoptrequest?id=${id}`, { status: 'rejected' })
+                // axios.put(`https://finalprojectt-205i.onrender.com/api/v1/adoptrequest?id=${id}`, { status: 'rejected' })
+                axios.put(`https://finalprojectt-205i.onrender.com/api/v1/adoptrequest?id=${id}`, { status: 'rejected' })
                     .then(res => {
                         if (res?.data?.acknowledged) {
                             router.refresh()

@@ -21,7 +21,7 @@ const Addshopitem = () => {
         formData.append('image', img);
         const res = await axios.post(`https://api.imgbb.com/1/upload?key=${imgbb_key}`, formData)
         itemInfo.image = res.data.data.display_url
-        axios.post('https://finalprojectt-delta.vercel.app//api/v1/shopitems', itemInfo)
+        axios.post('https://finalprojectt-205i.onrender.com/api/v1/shopitems', itemInfo)
             .then(res => {
                 toast.success('Item Added successfully!');
                 e.target.reset();

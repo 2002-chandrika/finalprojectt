@@ -8,7 +8,7 @@ import ReactStars from "react-rating-stars-component";
 const Shop = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
-        axios.get('https://finalprojectt-delta.vercel.app//api/v1/shopitems')
+        axios.get('https://finalprojectt-205i.onrender.com/api/v1/shopitems')
             .then(res => setItems(res.data))
     }, [])
     return (

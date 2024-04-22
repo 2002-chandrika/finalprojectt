@@ -8,7 +8,7 @@ const Admin_dashboard = () => {
   const [totalPet, setTotalPet] = useState(0)
   const [totalRequest, setTotalRequest] = useState(0)
   useEffect(() => {
-    axios.get('https://finalprojectt-delta.vercel.app//api/v1/getUserDataCount')
+    axios.get('https://finalprojectt-205i.onrender.com/api/v1/getUserDataCount')
     .then(res => {
         console.log(res.data.totalRegisterdUser, 'data res')
         setTotalUser(res.data.totalRegisterdUser)
@@ -16,15 +16,15 @@ const Admin_dashboard = () => {
       .catch(error => console.log(error))
 
 
-    axios.get('https://finalprojectt-delta.vercel.app//api/v1/petCommunity')
+    axios.get('https://finalprojectt-205i.onrender.com/api/v1/petCommunity')
       .then(res => setTotalPost(res.data.length))
       .catch(error => console.log(error))
 
-    axios.get('https://finalprojectt-delta.vercel.app//api/v1/petlistings')
+    axios.get('https://finalprojectt-205i.onrender.com/api/v1/petlistings')
       .then(res => setTotalPet(res.data.length))
       .catch(error => console.log(error))
 
-    axios.get('https://finalprojectt-delta.vercel.app//api/v1/adoptrequest')
+    axios.get('https://finalprojectt-205i.onrender.com/api/v1/adoptrequest')
       .then(res => setTotalRequest(res.data.length))
       .catch(error => console.log(error))
   }, [])

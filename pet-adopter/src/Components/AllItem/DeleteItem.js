@@ -16,7 +16,7 @@ const DeleteItem = ({ itemId }) => {
             confirmButtonText: "Yes, delete it!"
         }).then(async(result) => {
             if (result.isConfirmed) {
-                const res = await fetch(`https://finalprojectt-delta.vercel.app//api/v1/item/${id}`, {
+                const res = await fetch(`https://finalprojectt-205i.onrender.com/api/v1/item/${id}`, {
                     method: 'DELETE',
                 })
                 const data = await res.json()

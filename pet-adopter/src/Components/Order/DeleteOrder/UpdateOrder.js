@@ -16,9 +16,9 @@ const UpdateOrder = ({ itemId, data, useremail, children }) => {
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes"
         }).then(async (result) => {
-            if (result.isConfirmed) {//https://finalprojectt-delta.vercel.app//  https://finalprojectt-delta.vercel.app/
+            if (result.isConfirmed) {//https://finalprojectt-205i.onrender.com/  https://finalprojectt-205i.onrender.com
                 setloading(true)
-                const res = await axios.put(`https://finalprojectt-delta.vercel.app//api/v1/orders?id=${id}`, { status: data, email: useremail })
+                const res = await axios.put(`https://finalprojectt-205i.onrender.com/api/v1/orders?id=${id}`, { status: data, email: useremail })
                 setloading(false)
                 router.refresh()
                 console.log(res.data)

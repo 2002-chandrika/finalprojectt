@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const AllPetRequest = () => {
   const [data, setdata] = useState([])
   useEffect(() => {
-    fetch('https://finalprojectt-delta.vercel.app//api/v1/adoptData')
+    fetch('https://finalprojectt-205i.onrender.com/api/v1/adoptData')
       .then(res => res.json())
       .then(data => setdata(data))
   }, [])

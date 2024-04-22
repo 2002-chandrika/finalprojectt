@@ -22,8 +22,8 @@ const MedicineForm = () => {
         */
    
         return
-        ///   https://finalprojectt-delta.vercel.app/ https://finalprojectt-delta.vercel.app/
-        const res = await fetch('https://finalprojectt-delta.vercel.app//api/v1/medicine', {
+        ///   https://finalprojectt-205i.onrender.com https://finalprojectt-205i.onrender.com
+        const res = await fetch('https://finalprojectt-205i.onrender.com/api/v1/medicine', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

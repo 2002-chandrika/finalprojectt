@@ -22,8 +22,8 @@ const Petlisting = ({ searchParams }) => {
     const [pageNumber, setPageNumber] = useState(0)
     // All pets data fetch from database
     useEffect(() => {
-        axios.get(`https://finalprojectt-delta.vercel.app//api/v1/petlistings?pageNumber=${pageNumber}`)
-            // axios.get(`https://finalprojectt-delta.vercel.app//api/v1/petlistings?pageNumber=${pageNumber}`)
+        axios.get(`https://finalprojectt-205i.onrender.com/api/v1/petlistings?pageNumber=${pageNumber}`)
+            // axios.get(`https://finalprojectt-205i.onrender.com/api/v1/petlistings?pageNumber=${pageNumber}`)
             .then(res => {
                 setPetlistings(res.data);
             })
@@ -34,8 +34,8 @@ const Petlisting = ({ searchParams }) => {
         });
     }, [pageNumber])
     useEffect(() => {
-        axios.get('https://finalprojectt-delta.vercel.app//api/v1/petlistcount')
-            // axios.get('https://finalprojectt-delta.vercel.app//api/v1/petlistcount')
+        axios.get('https://finalprojectt-205i.onrender.com/api/v1/petlistcount')
+            // axios.get('https://finalprojectt-205i.onrender.com/api/v1/petlistcount')
             .then(res => {
                 setTotalData(res.data)
             })

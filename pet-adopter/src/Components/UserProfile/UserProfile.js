@@ -7,7 +7,7 @@ import Link from "next/link";
 const UserProfile = async () => {
     const session = await auth();
     const user = session.user
-    const res = await fetch(`https://finalprojectt-delta.vercel.app//api/v1/getregisteruser?email=${user?.email}`, {
+    const res = await fetch(`https://finalprojectt-205i.onrender.com/api/v1/getregisteruser?email=${user?.email}`, {
         cache: 'no-store'
     })
     const userData = await res.json()

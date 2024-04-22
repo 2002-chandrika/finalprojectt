@@ -62,8 +62,8 @@ const CheckoutForm = ({ item, session, clientSecretData }) => {
                     transID : paymentIntent?.id,
                     image : item.image,
                 }
-                // 'https://finalprojectt-delta.vercel.app//api/v1/orders'  https://finalprojectt-delta.vercel.app/
-                axios.post('https://finalprojectt-delta.vercel.app//api/v1/orders', OrderData).then((res) => {
+                // 'https://finalprojectt-205i.onrender.com/api/v1/orders'  https://finalprojectt-205i.onrender.com
+                axios.post('https://finalprojectt-205i.onrender.com/api/v1/orders', OrderData).then((res) => {
                     //.data.success
                     console.log(res.data)
                     if (res) {
